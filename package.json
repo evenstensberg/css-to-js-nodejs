@@ -1,0 +1,12 @@
+{
+  "name": "css-to-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
