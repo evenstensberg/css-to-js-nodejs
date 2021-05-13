@@ -2,8 +2,13 @@
   "name": "css-to-js-nodejs",
   "version": "1.0.0",
   "description": "CSS in JS for NodeJS API's",
-  "main": "index.mjs",
-  "keywords": ["css", "js", "css-in-js", "css-in-js-nodejs"],
+  "main": "index.js",
+  "keywords": [
+    "css",
+    "js",
+    "css-in-js",
+    "css-in-js-nodejs"
+  ],
   "author": "Even Stensberg<evenstensberg@gmail.com>",
   "license": "MIT",
   "dependencies": {

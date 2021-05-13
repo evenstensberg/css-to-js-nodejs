@@ -1,4 +1,4 @@
-import css from 'css';
+const css = require('css');
 
 function recursivelyAddProperties(outputObject, non_iterable_rules) {
     const rules = Object.entries(non_iterable_rules);
@@ -19,7 +19,7 @@ function recursivelyAddProperties(outputObject, non_iterable_rules) {
                 }
             })
         } else {
-            throw new Error(`Implement me! Send an issue to the repository: https://github.com/evenstensberg/css-to-js-nodejs`);
+           /*  throw new Error(`Implement me! Send an issue to the repository: https://github.com/evenstensberg/css-to-js-nodejs`); */
         }
     }
     return outputObject
@@ -32,7 +32,7 @@ function camelCase(string) {
     });
 }
 
-export default function cssToJS(in_css) {
+module.exports = function cssToJS(in_css) {
     const obj = css.parse(in_css, {});
     const outputObject = recursivelyAddProperties({}, obj.stylesheet.rules);
     return outputObject;
